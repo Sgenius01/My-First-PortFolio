@@ -39,7 +39,7 @@ section{
 }
 .home .navbar .logo{
     display:grid;
-    grid-auto-columns:1fr;
+    grid-template-columns:1fr;
     overflow:hidden;
     height:30px;
 }
@@ -601,5 +601,13 @@ section{
     .contact .cont .flex {
         padding-top: .3rem;
         padding-bottom: 2rem;
+    }
+}
+@media all and (max-width:740px) {
+    .home .content {
+        grid-template-columns:1fr;
+    }
+	.home .content .img{
+        text-align:right;
     }
 }
